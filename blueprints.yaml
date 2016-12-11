@@ -1,0 +1,30 @@
+name: Twig Medium
+version: 0.1.0
+description: Provides the ability to create a medium object from a file/stream in twig
+icon: plug
+author:
+  name: consistency
+  email: office@consistency.at
+homepage: https://github.com/c33s/grav-plugin-twig-medium
+keywords: grav, plugin, twig, streams, medium, image, assets
+bugs: https://github.com/c33s/grav-plugin-twig-medium/issues
+docs: https://github.com/c33s/grav-plugin-twig-medium/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
